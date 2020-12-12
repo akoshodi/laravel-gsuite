@@ -9,21 +9,17 @@
 
 This is a wrapper around the
 [Google Admin SDK](https://developers.google.com/admin-sdk/). It allows you to
-manage your G-Suite account in your Laravel application. There is an
-[example application](https://github.com/WyattCast44/gsuite-package-example) if
-you'd like to check that out.
+manage your G-Suite account in your Laravel application.
 
 **_Warning: under active development, use at your own risk. A version will be
 tagged when ready for testing._**
-
-**UPDATE: This package development has been paused, I would love to continue to build this package, but no longer have a GSuite account and using a personal account was to pricey. I may pick this back up if I can get either a work sponsored GSuite account, or some form of GSuite Dev credits.**
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require wyattcast44/gsuite
+composer require akoshodi/laravel-gsuite
 ```
 
 Once the install has finished, publish the configuration file
@@ -162,12 +158,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ### Security
 
 If you discover any security related issues, please email
-wyatt.castaneda@gmail.com instead of using the issue tracker.
+akoshodi@protonmail.com instead of using the issue tracker.
 
 ## Credits
 
 -   [Wyatt](https://github.com/wyattcast44)
--   [All Contributors](../../contributors)
 
 ## License
 
