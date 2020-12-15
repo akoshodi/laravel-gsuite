@@ -1,9 +1,9 @@
 <?php
 
-namespace Wyattcast44\GSuite\Actions;
+namespace Akoshodi\GSuite\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
-use Wyattcast44\GSuite\Resources\Accounts\AccountsRepository;
+use Akoshodi\GSuite\Resources\Accounts\AccountsRepository;
 
 class CreateAccountAction
 {

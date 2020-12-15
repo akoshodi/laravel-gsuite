@@ -1,12 +1,12 @@
 <?php
 
-namespace Wyattcast44\Gsuite\Tests;
+namespace Akoshodi\GSuite\Tests;
 
-use Wyattcast44\GSuite\GSuite;
+use Akoshodi\GSuite\GSuite;
 use Orchestra\Testbench\TestCase;
-use Wyattcast44\GSuite\GSuiteServiceProvider;
-use Wyattcast44\GSuite\Resources\Groups\GroupsRepository;
-use Wyattcast44\GSuite\Resources\Accounts\AccountsRepository;
+use Akoshodi\GSuite\GSuiteServiceProvider;
+use Akoshodi\GSuite\Resources\Groups\GroupsRepository;
+use Akoshodi\GSuite\Resources\Accounts\AccountsRepository;
 
 class GSuiteTest extends TestCase
 {
@@ -33,7 +33,7 @@ class GSuiteTest extends TestCase
     {
         $this->assertInstanceOf(AccountsRepository::class, app('gsuite')->accounts());
     }
-    
+
     public function test_the_base_class_can_return_the_groups_repo()
     {
         $this->assertInstanceOf(GroupsRepository::class, app('gsuite')->groups());

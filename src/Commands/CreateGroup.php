@@ -1,9 +1,9 @@
 <?php
 
-namespace Wyattcast44\GSuite\Commands;
+namespace Akoshodi\GSuite\Commands;
 
 use Illuminate\Console\Command;
-use Wyattcast44\GSuite\Actions\CreateGroupAction;
+use Akoshodi\GSuite\Actions\CreateGroupAction;
 
 class CreateGroup extends Command
 {
@@ -30,7 +30,7 @@ class CreateGroup extends Command
             $createGroupAction->execute($email, $name, $description);
 
             $this->line('');
-            
+
             $this->info("Group created! Email address: {$email}");
         } catch (\Exception $e) {
             logger($e);

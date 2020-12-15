@@ -1,10 +1,10 @@
 <?php
 
-namespace Wyattcast44\GSuite\Resources\Groups;
+namespace Akoshodi\GSuite\Resources\Groups;
 
-use Wyattcast44\GSuite\Traits\CachesResults;
-use Wyattcast44\GSuite\Clients\GoogleServicesClient;
-use Wyattcast44\GSuite\Contracts\GroupsRepository as GroupsRepositoryContract;
+use Akoshodi\GSuite\Traits\CachesResults;
+use Akoshodi\GSuite\Clients\GoogleServicesClient;
+use Akoshodi\GSuite\Contracts\GroupsRepository as GroupsRepositoryContract;
 
 class GroupsRepository implements GroupsRepositoryContract
 {
@@ -166,7 +166,7 @@ class GroupsRepository implements GroupsRepositoryContract
         if ($groupKey) {
             $key = $key . ":{$groupKey}";
         }
-        
+
         return $key;
     }
 

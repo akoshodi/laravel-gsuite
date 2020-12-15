@@ -1,9 +1,9 @@
 <?php
 
-namespace Wyattcast44\GSuite\Commands;
+namespace Akoshodi\GSuite\Commands;
 
 use Illuminate\Console\Command;
-use Wyattcast44\GSuite\Actions\DeleteGroupAction;
+use Akoshodi\GSuite\Actions\DeleteGroupAction;
 
 class DeleteGroup extends Command
 {
@@ -19,7 +19,7 @@ class DeleteGroup extends Command
     public function handle(DeleteGroupAction $deleteGroupAction)
     {
         $email = $this->ask('What is the email address of the group you would like to delete?');
-                
+
         if (!$this->confirm("Are you sure your would like to delete the following group: {$email}", false)) {
             return;
         }
@@ -30,7 +30,7 @@ class DeleteGroup extends Command
             $deleteGroupAction->execute($email);
 
             $this->line('');
-            
+
             $this->info('Group deleted!');
         } catch (\Exception $e) {
             logger($e);

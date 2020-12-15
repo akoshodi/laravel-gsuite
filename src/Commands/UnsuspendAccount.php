@@ -1,9 +1,9 @@
 <?php
 
-namespace Wyattcast44\GSuite\Commands;
+namespace Akoshodi\GSuite\Commands;
 
 use Illuminate\Console\Command;
-use Wyattcast44\GSuite\Actions\UnsuspendAccountAction;
+use Akoshodi\GSuite\Actions\UnsuspendAccountAction;
 
 class UnsuspendAccount extends Command
 {
@@ -19,7 +19,7 @@ class UnsuspendAccount extends Command
     public function handle(UnsuspendAccountAction $unsuspendAccountAction)
     {
         $email = $this->ask('What is the primary email address of the account you would like to unsuspend?');
-                
+
         if (!$this->confirm("Are you sure your would like to unsuspend: {$email}", false)) {
             return;
         }
@@ -28,7 +28,7 @@ class UnsuspendAccount extends Command
 
         try {
             $unsuspendAccountAction->execute($email);
-            
+
             $this->line('');
 
             $this->info('Account unsuspended!');

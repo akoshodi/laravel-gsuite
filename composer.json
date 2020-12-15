@@ -1,38 +1,41 @@
 {
-    "name": "wyattcast44/gsuite",
+    "name": "akoshodi/laravel-gsuite",
     "description": "Helps manage your GSuite Account from your Laravel application",
     "keywords": [
-        "wyattcast44",
+        "akoshodi",
         "gsuite"
     ],
-    "homepage": "https://github.com/wyattcast44/gsuite",
+    "homepage": "https://github.com/akoshodi/laravel-gsuite",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
             "name": "Wyatt",
             "email": "wyatt.castaneda@gmail.com",
+            "role": "Developer",
+            "name": "Akinwale",
+            "email": "akoshodi@protonmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.1",
         "google/apiclient": "^2.2",
-        "illuminate/support": "5.8.*",
+        "illuminate/support": "^8.0",
         "spatie/laravel-queueable-action": "^2.1"
     },
     "require-dev": {
-        "orchestra/testbench": "3.8.*",
-        "phpunit/phpunit": "^7.0"
+        "orchestra/testbench": "^6.1",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Wyattcast44\\GSuite\\": "src"
+            "Akoshodi\\GSuite\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wyattcast44\\GSuite\\Tests\\": "tests"
+            "Akoshodi\\GSuite\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Wyattcast44\\GSuite\\GSuiteServiceProvider"
+                "Akoshodi\\GSuite\\GSuiteServiceProvider"
             ],
             "aliases": {
-                "GSuite": "Wyattcast44\\GSuite\\Facades\\GSuiteFacade"
+                "GSuite": "Akoshodi\\GSuite\\Facades\\GSuiteFacade"
             }
         }
     }

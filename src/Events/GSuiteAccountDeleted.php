@@ -1,6 +1,6 @@
 <?php
 
-namespace Wyattcast44\GSuite\Events;
+namespace Akoshodi\GSuite\Events;
 
 use Illuminate\Queue\SerializesModels;
 

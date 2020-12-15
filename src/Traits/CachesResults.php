@@ -1,6 +1,6 @@
 <?php
 
-namespace Wyattcast44\GSuite\Traits;
+namespace Akoshodi\GSuite\Traits;
 
 use Illuminate\Support\Facades\Cache;
 

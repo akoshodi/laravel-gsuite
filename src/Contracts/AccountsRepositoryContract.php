@@ -1,13 +1,13 @@
 <?php
 
-namespace Wyattcast44\GSuite\Contracts;
+namespace Akoshodi\GSuite\Contracts;
 
 interface AccountsRepositoryContract
 {
     public function list(array $parameters);
 
     public function delete(string $userKey);
-    
+
     public function suspend(string $userKey);
 
     public function unsuspend(string $userKey);

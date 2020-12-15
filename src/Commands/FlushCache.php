@@ -1,10 +1,10 @@
 <?php
 
-namespace Wyattcast44\GSuite\Commands;
+namespace Akoshodi\GSuite\Commands;
 
 use Illuminate\Console\Command;
-use Wyattcast44\GSuite\Resources\Groups\GroupsRepository;
-use Wyattcast44\GSuite\Resources\Accounts\AccountsRepository;
+use Akoshodi\GSuite\Resources\Groups\GroupsRepository;
+use Akoshodi\GSuite\Resources\Accounts\AccountsRepository;
 
 class FlushCache extends Command
 {
@@ -26,7 +26,7 @@ class FlushCache extends Command
             $accounts_repo->flushCache();
 
             $this->line('');
-            
+
             $this->info('Cache flushed!');
         } catch (\Exception $e) {
             logger($e);

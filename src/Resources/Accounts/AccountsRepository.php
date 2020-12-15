@@ -1,11 +1,11 @@
 <?php
 
-namespace Wyattcast44\GSuite\Resources\Accounts;
+namespace Akoshodi\GSuite\Resources\Accounts;
 
 use Illuminate\Support\Arr;
-use Wyattcast44\GSuite\Traits\CachesResults;
-use Wyattcast44\GSuite\Clients\GoogleServicesClient;
-use Wyattcast44\GSuite\Contracts\AccountsRepositoryContract;
+use Akoshodi\GSuite\Traits\CachesResults;
+use Akoshodi\GSuite\Clients\GoogleServicesClient;
+use Akoshodi\GSuite\Contracts\AccountsRepositoryContract;
 
 class AccountsRepository implements AccountsRepositoryContract
 {
@@ -218,7 +218,7 @@ class AccountsRepository implements AccountsRepositoryContract
                     $accounts = $this->getCache($this->getCacheKey());
                 } else {
                     $accounts = $this->client->listUsers($parameters);
-    
+
                     $this->putCache($this->getCacheKey(), $accounts);
                 }
             } else {
@@ -279,7 +279,7 @@ class AccountsRepository implements AccountsRepositoryContract
      * Update an account
      *
      * @link https://developers.google.com/admin-sdk/directory/v1/reference/users/update
-     * 
+     *
      * @return \Google_Service_Directory_User
      */
     public function update(string $userKey, array $fields)
@@ -369,7 +369,7 @@ class AccountsRepository implements AccountsRepositoryContract
         if ($userKey) {
             $key = $key . ":{$userKey}";
         }
-        
+
         return $key;
     }
 

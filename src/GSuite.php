@@ -1,10 +1,10 @@
 <?php
 
-namespace Wyattcast44\GSuite;
+namespace Akoshodi\GSuite;
 
-use Wyattcast44\GSuite\Clients\GoogleServicesClient;
-use Wyattcast44\GSuite\Resources\Groups\GroupsRepository;
-use Wyattcast44\GSuite\Resources\Accounts\AccountsRepository;
+use Akoshodi\GSuite\Clients\GoogleServicesClient;
+use Akoshodi\GSuite\Resources\Groups\GroupsRepository;
+use Akoshodi\GSuite\Resources\Accounts\AccountsRepository;
 
 class GSuite
 {
@@ -31,7 +31,7 @@ class GSuite
     {
         return $this->accounts_repo;
     }
-    
+
     public function groups()
     {
         return $this->groups_repo;

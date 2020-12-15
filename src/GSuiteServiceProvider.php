@@ -1,26 +1,26 @@
 <?php
 
-namespace Wyattcast44\GSuite;
+namespace Akoshodi\GSuite;
 
 // Commands
-use Wyattcast44\GSuite\Commands\CreateGroup;
-use Wyattcast44\GSuite\Commands\CreateAccount;
-use Wyattcast44\GSuite\Commands\DeleteAccount;
-use Wyattcast44\GSuite\Commands\SuspendAccount;
-use Wyattcast44\GSuite\Commands\UnsuspendAccount;
+use Akoshodi\GSuite\Commands\CreateGroup;
+use Akoshodi\GSuite\Commands\CreateAccount;
+use Akoshodi\GSuite\Commands\DeleteAccount;
+use Akoshodi\GSuite\Commands\SuspendAccount;
+use Akoshodi\GSuite\Commands\UnsuspendAccount;
 
 // Clients
-use Wyattcast44\GSuite\Clients\GoogleClient;
-use Wyattcast44\GSuite\Clients\GoogleServicesClient;
+use Akoshodi\GSuite\Clients\GoogleClient;
+use Akoshodi\GSuite\Clients\GoogleServicesClient;
 
 // Repos
-use Wyattcast44\GSuite\Resources\Groups\GroupsRepository;
-use Wyattcast44\GSuite\Resources\Accounts\AccountsRepository;
+use Akoshodi\GSuite\Resources\Groups\GroupsRepository;
+use Akoshodi\GSuite\Resources\Accounts\AccountsRepository;
 
 // Misc
 use Illuminate\Support\ServiceProvider;
-use Wyattcast44\GSuite\Commands\DeleteGroup;
-use Wyattcast44\GSuite\Commands\FlushCache;
+use Akoshodi\GSuite\Commands\DeleteGroup;
+use Akoshodi\GSuite\Commands\FlushCache;
 
 class GSuiteServiceProvider extends ServiceProvider
 {
@@ -35,7 +35,7 @@ class GSuiteServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/gsuite.php', 'gsuite');
-    
+
         // The base Google client
         $this->app->singleton('google-client', function () {
             return new GoogleClient;
@@ -50,7 +50,7 @@ class GSuiteServiceProvider extends ServiceProvider
         $this->app->singleton('gsuite-accounts-repo', function () {
             return new AccountsRepository(app('google-services'));
         });
-        
+
         // G-Suite groups repo
         $this->app->singleton('gsuite-groups-repo', function () {
             return new GroupsRepository(app('google-services'));

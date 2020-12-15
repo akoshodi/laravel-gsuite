@@ -1,6 +1,6 @@
 <?php
 
-namespace Wyattcast44\GSuite\Clients;
+namespace Akoshodi\GSuite\Clients;
 
 class GoogleClient
 {

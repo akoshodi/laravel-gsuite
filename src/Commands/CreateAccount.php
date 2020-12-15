@@ -1,10 +1,10 @@
 <?php
 
-namespace Wyattcast44\GSuite\Commands;
+namespace Akoshodi\GSuite\Commands;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use Wyattcast44\GSuite\Actions\CreateAccountAction;
+use Akoshodi\GSuite\Actions\CreateAccountAction;
 
 class CreateAccount extends Command
 {
@@ -38,7 +38,7 @@ class CreateAccount extends Command
             $createAccountAction->execute($name, $email, $password, true);
 
             $this->line('');
-            
+
             $this->info("Account created! Email address: {$email}, Temporary Password: {$password}");
         } catch (\Exception $e) {
             logger($e);

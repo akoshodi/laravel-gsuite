@@ -1,6 +1,6 @@
 <?php
 
-namespace Wyattcast44\GSuite\Facades;
+namespace Akoshodi\GSuite\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Wyattcast44\GSuite\Clients;
+namespace Akoshodi\GSuite\Clients;
 
 class GoogleServicesClient
 {
@@ -48,7 +48,7 @@ class GoogleServicesClient
 
         return $this;
     }
-    
+
     /**
      * Get the configured client
      *

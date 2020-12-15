@@ -1,9 +1,9 @@
 <?php
 
-namespace Wyattcast44\GSuite\Actions;
+namespace Akoshodi\GSuite\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
-use Wyattcast44\GSuite\Resources\Groups\GroupsRepository;
+use Akoshodi\GSuite\Resources\Groups\GroupsRepository;
 
 class CreateGroupAction
 {

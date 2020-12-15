@@ -1,9 +1,9 @@
 <?php
 
-namespace Wyattcast44\GSuite\Commands;
+namespace Akoshodi\GSuite\Commands;
 
 use Illuminate\Console\Command;
-use Wyattcast44\GSuite\Actions\DeleteAccountAction;
+use Akoshodi\GSuite\Actions\DeleteAccountAction;
 
 class DeleteAccount extends Command
 {
@@ -19,7 +19,7 @@ class DeleteAccount extends Command
     public function handle(DeleteAccountAction $deleteAccountAction)
     {
         $email = $this->ask('What is the primary email address of the account you would like to delete?');
-                
+
         if (!$this->confirm("Are you sure your would like to delete the following account: {$email}", false)) {
             return;
         }
@@ -30,7 +30,7 @@ class DeleteAccount extends Command
             $deleteAccountAction->execute($email);
 
             $this->line('');
-            
+
             $this->info('Account deleted!');
         } catch (\Exception $e) {
             logger($e);

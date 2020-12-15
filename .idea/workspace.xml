@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed4c4625-df4f-4592-a734-af1b38e49348" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/CreateAccountAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/CreateAccountAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/CreateGroupAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/CreateGroupAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/DeleteAccountAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/DeleteAccountAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/DeleteGroupAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/DeleteGroupAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/SuspendAccountAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/SuspendAccountAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Actions/UnsuspendAccountAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Actions/UnsuspendAccountAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clients/GoogleClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clients/GoogleClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clients/GoogleServicesClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clients/GoogleServicesClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/CreateAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CreateAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/CreateGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/CreateGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/DeleteAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/DeleteAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/DeleteGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/DeleteGroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/FlushCache.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/FlushCache.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/SuspendAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/SuspendAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Commands/UnsuspendAccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Commands/UnsuspendAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/AccountsRepositoryContract.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contracts/AccountsRepositoryContract.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contracts/GroupsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contracts/GroupsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Events/GSuiteAccountDeleted.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Events/GSuiteAccountDeleted.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facades/GSuiteFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facades/GSuiteFacade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GSuite.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GSuite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GSuiteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/GSuiteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/Accounts/AccountsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/Accounts/AccountsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/Groups/GroupsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/Groups/GroupsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/CachesResults.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/CachesResults.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/GSuiteTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/GSuiteTest.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lZJr6zW21fkVVahrzQoycUjF3U" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed4c4625-df4f-4592-a734-af1b38e49348" name="Default Changelist" comment="" />
+      <created>1607798876611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607798876611</updated>
+      <workItem from="1607798879110" duration="1853000" />
+      <workItem from="1607969891130" duration="86000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
